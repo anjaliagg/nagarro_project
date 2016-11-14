@@ -1,0 +1,11 @@
+<h1>People</h1> 
+<ul>
+<% @people.each do |person| %>	
+		<li> <%= link_to person, person_path(person) %> </li>
+<% end %>
+</ul>
+<%#index is the action <br>
+html is the content <br>
+erb is the template engine
+View should not know where the data came from but should only display it%>
+
